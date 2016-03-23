@@ -32,50 +32,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-        url: '/search',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/search.html'
-            }
-        }
-    })
 
     .state('app.browse', {
-            url: '/browse',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/browse.html'
-                }
-            }
-        })
-        .state('app.playlists', {
-            url: '/playlists',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/playlists.html',
-                    controller: 'PlaylistsCtrl'
-                }
-            }
-        })
-
-    .state('app.single', {
-        url: '/playlists/:playlistId',
+        url: '/browse',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlist.html',
-                controller: 'PlaylistCtrl'
+                templateUrl: 'templates/browse.html'
             }
         }
     })
 
-    .state('loginfb', {
-            url: '/loginfb',
-            templateUrl: 'templates/loginfb.html',
-            controller: 'loginfbCtrl'
-        })
 
-        .state('createshop', {
+
+    .state('loginfb', {
+        url: '/loginfb',
+        templateUrl: 'templates/loginfb.html',
+        controller: 'loginfbCtrl'
+    })
+
+    .state('createshop', {
             url: '/createshop',
             templateUrl: 'templates/createshop.html',
             controller: 'createshopCtrl'
