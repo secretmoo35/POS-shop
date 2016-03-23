@@ -1,16 +1,20 @@
 <ion-view>
     <ion-content>
-        <div>
-            <div class="item item-body text-center">
-                <img class="text-center" src="/img/Shop150.png">
-                <h2>FaceBook Name</h2>
-            </div>
+        <div class="text-center">
+            <br>
+            <br>
+            <br>
+            <img src="https://graph.facebook.com/{{ user.id }}/picture?width=120&height=120" style="border-radius: 100%;" />
+            <h4>{{user.name}}</h4>
         </div>
+        <br>
         <ion-list ng-repeat="item in pages">
-            <ion-radio ng-model="choice" ng-value="'A'"><img src="/img/{{item.pageimg}}.png">{{item.pagename}}</ion-radio>
+            <ion-radio> <img src="https://graph.facebook.com/{{ item.id }}/picture?width=30&height=30" /> {{item.name}}</ion-radio>
         </ion-list>
+        <div class="text-center">
         <button class="button button-energized" ng-click="gotoHome()">
             ยืนยัน
         </button>
+        </div>
     </ion-content>
 </ion-view>

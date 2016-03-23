@@ -12,3 +12,7 @@
 #page-center {
 	margin-top: 30px;
 }
+.imgRadius {
+    -webkit-user-drag: none;
+    border-radius: 100%;
+}
