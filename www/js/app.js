@@ -69,6 +69,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/chooseshop',
             templateUrl: 'templates/chooseshop.html',
             controller: 'chooseshopCtrl'
+        })
+                .state('selectpage', {
+            url: '/selectpage',
+            templateUrl: 'templates/selectpage.html',
+            controller: 'selectpageCtrl'
         });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/loginfb');

@@ -4,7 +4,7 @@ angular.module('ionic')
 
 
     $scope.gotoSelectPage = function() {
-        window.location = "#/chooseshop";
+        window.location = "#/selectpage";
     };
 
 

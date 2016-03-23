@@ -1,22 +1,22 @@
-<ion-view view-title="Playlist">
-  <ion-content>
-    <h1>Playlist55555</h1>
+<ion-view>
+    <ion-content>
+        <h1>กรุณาเลือกรูปภาพของร้าน</h1>
+        <div class="row-fluid">
+            <div class="span8 offset2">
+                <div>
+                    <div class="item item-body text-center">
+                        <img class="text-center" src="/img/Shop150.png">
+                        <h2>กรุณาเลือกรูปภาพของร้าน</h2>
+                    </div>
+                </div>
+                <ion-list ng-repeat="item in imagesshop">
+                    <ion-radio ng-model="choice" ng-value="'A'"><img src="/img/{{item}}.png"></ion-radio>
+                </ion-list>
+            </div>
+        </div>
 
-    <div class="row-fluid">
-			<div class="span8 offset2">
-				<div class="row-fluid">
-					<div class="alert alert-info">
-						Selected Image: &nbsp;{{selected_image || 'NONE'}}
-					</div>
-				</div>
-				<div class="row">
-					<div class="col col-10"></div>
-						<a class="span1 col col-40" href="#/createname" ng-repeat="image in all_images" ng-click="selectImage(image)" ng-class="{'selected-image': (selected_image === image)}">
-							<img ng-src="./img/{{image}}.png">
-						</a>
-					<div class="col col-10"></div>
-				</div>
-			</div>
-		</div>	
-  </ion-content>
+        <button class="button button-energized" ng-click="gotocreatename()">
+  ยืนยัน
+</button>
+    </ion-content>
 </ion-view>
