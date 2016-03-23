@@ -1,0 +1,13 @@
+<ion-view title="Pages">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content has-header="true" ng-init="loadPages()">
+        <ion-list>
+            <ion-item ng-repeat="item in items" ng-click="getPagesToken(item)">
+                <img src="https://graph.facebook.com/{{ item.id }}/picture?width=20&height=20" /> 
+                {{item.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -3,13 +3,14 @@
         <div>
             <div class="item item-body text-center">
                 <img class="text-center" src="/img/Shop150.png">
-                <h2>
-FaceBook Name
-    </h2>
+                <h2>FaceBook Name</h2>
             </div>
         </div>
         <ion-list ng-repeat="item in pages">
             <ion-radio ng-model="choice" ng-value="'A'"><img src="/img/{{item.pageimg}}.png">{{item.pagename}}</ion-radio>
         </ion-list>
+        <button class="button button-energized" ng-click="gotoHome()">
+            ยืนยัน
+        </button>
     </ion-content>
 </ion-view>

@@ -1,10 +1,10 @@
 angular.module('ionic')
 
-.controller('createnameCtrl', ['$scope', function($scope) {
+.controller('createnameCtrl', ['$scope','$location', function($scope,$location) {
 
 
     $scope.gotoSelectPage = function() {
-        window.location = "#/selectpage";
+       $location.path('/selectpage');
     };
 
 

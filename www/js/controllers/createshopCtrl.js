@@ -1,10 +1,11 @@
 angular.module('ionic')
 
-.controller('createshopCtrl', ['$scope', function($scope) {
+.controller('createshopCtrl', ['$scope','$location', function($scope,$location) {
 
 
     $scope.gotoselectpicshop = function() {
-        window.location = "#/selectpicshop";
+    	
+        $location.path('/selectpicshop');
     };
 
 }])
