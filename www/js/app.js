@@ -74,11 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             templateUrl: 'templates/loginfb.html',
             controller: 'loginfbCtrl'
         })
-        .state('selectshop', {
-            url: '/selectshop',
-            templateUrl: 'templates/selectshop.html',
-            //controller: 'selectshopCtrl'
-        })
+
         .state('createshop', {
             url: '/createshop',
             templateUrl: 'templates/createshop.html',
