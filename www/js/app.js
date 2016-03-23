@@ -1,4 +1,4 @@
-angular.module('sociogram', ['ionic', 'openfb'])
+angular.module('POS-Shop', ['ionic', 'openfb'])
 
 .run(function($rootScope, $state, $ionicPlatform, $window, OpenFB) {
 
