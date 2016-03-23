@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+
+.bg-login {
+    background-color: #FF9900;
+}
+
+.selected-image {
+	border-color: #FF9900;
+	border-style: solid;
+	border-width: thick;	
+}
+#page-center {
+	margin-top: 30px;
+}

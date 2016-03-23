@@ -1,0 +1,28 @@
+<ion-view view-title="Playlist">
+    <ion-content>
+<div >
+
+
+  <div class="item item-body text-center" >
+    <img class="text-center" src="/img/Shop150.png">
+    <h2>
+FaceBook Name
+    </h2>
+  </div>
+
+</div>
+<!--         <div class="list">
+            <a class="item item-thumbnail-left" href="#">
+            	<div class="row">
+                <div class="col col-33"><img src="/img/shop2.png"></div>
+                 <div class="col col-33"><h2 id="page-center">Shop A</h2> </div>
+                 <div class="col col-33"><ion-radio ng-model="choice" ng-value="'B'"></ion-radio></div>
+                </div>
+            </a>
+        </div> -->
+
+        <ion-list ng-repeat="item in pages">
+  <ion-radio ng-model="choice" ng-value="'A'"><img src="/img/{{item.pageimg}}.png">{{item.pagename}}</ion-radio>
+</ion-list>
+    </ion-content>
+</ion-view>

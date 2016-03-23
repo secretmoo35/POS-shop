@@ -1,0 +1,22 @@
+<ion-view view-title="Playlist">
+  <ion-content>
+    <h1>Playlist55555</h1>
+
+    <div class="row-fluid">
+			<div class="span8 offset2">
+				<div class="row-fluid">
+					<div class="alert alert-info">
+						Selected Image: &nbsp;{{selected_image || 'NONE'}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-10"></div>
+						<a class="span1 col col-40" href="#/createname" ng-repeat="image in all_images" ng-click="selectImage(image)" ng-class="{'selected-image': (selected_image === image)}">
+							<img ng-src="./img/{{image}}.png">
+						</a>
+					<div class="col col-10"></div>
+				</div>
+			</div>
+		</div>	
+  </ion-content>
+</ion-view>
