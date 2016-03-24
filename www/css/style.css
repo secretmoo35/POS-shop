@@ -5,14 +5,21 @@
 }
 
 .selected-image {
-	border-color: #FF9900;
-	border-style: solid;
-	border-width: thick;	
+    border-color: #FF9900;
+    border-style: solid;
+    border-width: thick;
 }
+
 #page-center {
-	margin-top: 30px;
+    margin-top: 30px;
 }
+
 .imgRadius {
     -webkit-user-drag: none;
     border-radius: 100%;
+}
+
+.img-size-200 {
+    width: 200px;
+    height: 200px;
 }
